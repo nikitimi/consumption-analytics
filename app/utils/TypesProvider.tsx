@@ -37,11 +37,12 @@ const TypesProvider = (props: TypesProviderType) => {
 
   useEffect(() => {
     // Fetch data in the Firestore database and push here
+    const set = new Set([...defaultTypes, ...consumptionTypes]);
     return setState((prevState) => ({
       ...prevState,
-      types: [...defaultTypes, ...consumptionTypes],
+      types: Array.from(set),
     }));
-  }, []);
+  }, [consumptionTypes]);
 
   async function addType(type: string) {
     // Check if user is Authenticated

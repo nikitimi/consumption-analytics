@@ -22,7 +22,7 @@ function useCustomTypes() {
           setState(consumptionPlaceholder);
         }
       }),
-    [userId]
+    [userId, collectionPath]
   );
 
   return state;

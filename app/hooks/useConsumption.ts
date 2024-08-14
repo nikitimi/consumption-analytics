@@ -21,7 +21,7 @@ function useConsumption() {
           setState(consumptionPlaceholder);
         }
       }),
-    [userId]
+    [userId, collectionPath]
   );
 
   return state;
