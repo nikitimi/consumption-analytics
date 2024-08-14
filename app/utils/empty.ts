@@ -1,0 +1,4 @@
+const EMPTY_STRING = "";
+const EMPTY_INTEGER = -1;
+
+export {EMPTY_STRING, EMPTY_INTEGER}
