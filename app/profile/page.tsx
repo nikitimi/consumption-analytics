@@ -19,7 +19,7 @@ const Profile = () => {
     if (inputValue.trim() === EMPTY_STRING) {
       return console.log("Can't add empty value");
     }
-    inputRef.current.value = "";
+    inputRef.current.value = EMPTY_STRING;
     addType(inputValue);
   }
 
